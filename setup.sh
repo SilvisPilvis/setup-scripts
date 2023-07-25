@@ -118,4 +118,14 @@ else
     echo "Skiping"
 fi
 
+echo "Install rofi? (y/n) enter to skip"
+read rofi
+if [ $rofi == "y" || $rofi == "Y" ] then
+    apt install rofi -y
+else
+    echo "Skiping"
+fi
+    
+
+
 echo "Exiting goodbye!"
