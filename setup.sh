@@ -126,6 +126,12 @@ else
     echo "Skiping"
 fi
     
+echo "Install Conky? (y/n) enter to skip"
+read conky
+if [ $conky == "y" || $conky == "Y" ] then
+    sudo apt install conky -y
+else
+    echo "Skiping"
+fi
 
-
-echo "Exiting goodbye!"
+echo "Setup complete. Exiting goodbye!"
